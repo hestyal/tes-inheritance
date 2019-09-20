@@ -1,0 +1,25 @@
+class minuman:
+    def __init__(self, es_teh, es_kelapa, greantea, thaitea, cofee, sprite,):
+        self.es_teh = es_teh
+        self.es_kelapa = es_kelapa
+        self.greantea = greantea
+        self.thaitea = thaitea
+        self.cofee = cofee
+        self.sprite = sprite
+
+    def Daftar_hargaminuman(self):
+
+        print("Daftar_hargaminuman : ","\nes_teh : ",self.es_teh, "\nes kelapa : ",self.es_kelapa, "\ngreen tea : ",self.greantea, "\nthai tea : ",self.thaitea,"\ncofee : ", self.cofee, "\nsprite : ",self.sprite, )
+class hargaminuman(minuman):
+    def __init__(self, es_teh, es_kelapa, greantea, thaitea, cofee, sprite, ):
+        minuman.__init__(self,  es_teh, es_kelapa, greantea, thaitea, cofee, sprite,)
+        self.MD = "MINUMAN DINGIN"
+    
+def main():
+
+    Daftar_harga = hargaminuman("5.000", "10.000", "12.000", "20.000","22.000","23.000")
+
+    Daftar_harga.Daftar_hargaminuman()
+
+if __name__ == "__main__":
+        main()
